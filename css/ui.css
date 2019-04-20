@@ -35,12 +35,13 @@ body{
     font-size: 18px;
   }
 .nav-bar li a:hover:not(.active) {
-    color: #970000;
+    color: #133337;
   }
   
 .active {
-    color: #970000 !important;
+    color: #133337 !important;
   }
+  
 div.background{
     background-image: url(../img/background.jpg) !important;
     background-position: center;
@@ -92,7 +93,7 @@ div.background{
   top: 0px;
   padding: 10px 20px;
   font-size: 20px;
-  color: #970000
+  color: #133337
 }
 
 
@@ -109,11 +110,11 @@ div.background{
 form.form-search-course button {
   width: 10%;
   padding: 10px 14px;
-  background: #970000;
+  background: #133337;
   color: white;
   float: left;
   font-size: 17px;
-  border: 1px solid #970000;
+  border: 1px solid #133337;
   cursor: pointer;
 } */
 form.form-search input[type=text]{
@@ -126,7 +127,7 @@ form.form-search input[type=text]{
 }
 form.form-search input[type=text]:focus{
   outline: none;
-  border: 2px solid #970000;
+  border: 2px solid #133337;
   padding: 10px 14px;
 }
 form.form-search button {
@@ -134,10 +135,10 @@ form.form-search button {
   float: left;
   width: 7%;
   padding: 9.5px 14px;
-  background: #970000;
+  background: #133337;
   color: white;
   font-size: 17px;
-  border: 1px solid #970000;
+  border: 1px solid #133337;
   cursor: pointer;
 }
 
@@ -159,15 +160,15 @@ form.formAuth{
 form.formBook input[type=text],input[type=email],input[type=date],input[type=number],input[type=password]{
   border-radius: 4px;
   padding: 10px 14px;
-  border: 1px solid #970000;
+  border: 1px solid #133337;
   float: left;
   width: 90%;
   height: 20px;
 }
-form.formAuth input[type=text],input[type=email],input[type=date],input[type=number],input[type=password]{
+form.formAuth input[type=text],input[type=email],input[type=password]{
   border-radius: 4px;
   padding: 10px 14px;
-  border: 1px solid #970000;
+  border: 1px solid #133337;
   float: left;
   width: 95%;
   height: 20px;
@@ -175,13 +176,13 @@ form.formAuth input[type=text],input[type=email],input[type=date],input[type=num
 
 form.formBook input[type=text]:focus{
   outline: none;
-  border: 2px solid #970000;
+  border: 2px solid #133337;
   padding: 10px 14px;
 }
 .select{
   border-radius: 4px;
   padding: 10px 14px;
-  border: 1px solid #970000;
+  border: 1px solid #133337;
   width: 98%;
   float: left;
   height: 50px;
@@ -189,14 +190,14 @@ form.formBook input[type=text]:focus{
 }
 .select:focus{
   outline: none;
-  border: 1px solid #970000;
+  border: 1px solid #133337;
   /* padding: 20px 14px; */
 }
 .textarea{
   border-radius: 0px;
   padding: 0px 9px;
   float: left;
-  border: 1px solid #970000;
+  border: 1px solid #133337;
   width: 93%;
   color: #000000;
 }
@@ -216,9 +217,183 @@ form.formBook input[type=text]:focus{
 }
 .formAuth p a{
   text-decoration: none;
-  color: #970000;
+  color: #133337;
 }
 
+.section-category{
+  margin-top: 85vh;
+  width: 100%;
+}
+
+.container{
+  padding: 0px 180px;
+}
+div.product{
+  width: 23%;
+  background: #fff;
+  float: left;
+  margin: 30px 12px;
+}
+div.product div{
+  padding: 12px 10px;
+}
+
+.section-popular{
+  margin-top: 100vh; 
+}
+.section-popular-2{
+  margin-top: 15vh; 
+}
+.cart{
+  font-size: 30px;
+  text-decoration: none;
+  color: #133337;
+  padding-bottom: 15px; 
+}
+.cart-big{
+  text-decoration: none;
+  color: #133337;
+}
+
+/* Cart Page */
+.cart-body{
+  margin-top: 20vh;
+}
+.shopping-cart {
+  width: 750px;
+  min-height: 423px;
+  margin: 80px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 4px;
+ 
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: #5E6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+ 
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+ 
+.item:nth-child(3) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+.delete-btn,
+.like-btn {
+  display: inline-block;
+  Cursor: pointer;
+}
+.delete-btn {
+  width: 18px;
+  height: 17px;
+  background: url(&quot;delete-icn.svg&quot;) no-repeat center;
+}
+ 
+.like-btn {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  background: url('twitter-heart.png');
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+}
+.is-active {
+  animation-name: animate;
+  animation-duration: .8s;
+  animation-iteration-count: 1;
+  animation-timing-function: steps(28);
+  animation-fill-mode: forwards;
+}
+ 
+@keyframes animate {
+  0%   { background-position: left;  }
+  50%  { background-position: right; }
+  100% { background-position: right; }
+}
+.image {
+  margin-right: 50px;
+}
+ 
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+ 
+.description span {
+  display: block;
+  font-size: 14px;
+  color: #43484D;
+  font-weight: 400;
+}
+ 
+.description span:first-child {
+  margin-bottom: 5px;
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939E;
+}
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+ 
+button:focus,
+input:focus {
+  outline:0;
+}
+.total-price {
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+.check-out{
+  width: 750px;
+  min-height: 70px;
+  margin: 10px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 4px;
+ 
+  display: flex;
+  flex-direction: column;
+}
+.check-out-container{
+  
+  padding: 15px 18px;
+}
 
 
 .width100{
@@ -234,7 +409,7 @@ form.formBook input[type=text]:focus{
   color: #000000 !important;
 }
 .red{
-  color: #970000 !important;
+  color: #133337 !important;
 }
 .grey{
   color: #eee !important; 
@@ -242,10 +417,10 @@ form.formBook input[type=text]:focus{
 
 /* Button */
 .button{
-  background: #970000;
+  background: #133337;
   border-radius: 4px;
   padding: 14px 16px;
-  border: 0px #970000;
+  border: 0px #133337;
   cursor: pointer;
   color: #fff;
 }
@@ -253,6 +428,96 @@ form.formBook input[type=text]:focus{
   opacity: 0.7;
   
 }
+
+.pushLeft{
+  float: left !important;
+}
+
+.pushRight{
+  float: right !important;
+}
+/* Footer */
+footer{
+  margin-top: 250vh; 
+  background:linear-gradient(#1333379a,#133337), url(../img/background.jpg)!important;
+  /* background-image: url(../img/footer.jpg) !important; */
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+  height: 50vh;
+}
+div.container-2{
+  padding: 100px 200px;
+}
+.foot{
+  width: 20%;
+  float: left;
+  margin: 30px 2px;
+}
+.foot-list{
+  list-style-type:none;
+  padding-left: 20px !important;
+}
+.foot-list li a{
+  text-decoration: none;
+  color: white;
+}
+.foot-list li a:hover{
+  color: #b8b8b8;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+} 
+
+
+/* Logged in dropdown */
+.dropbtn {
+  background-color: #133337;
+  color: white;
+  padding: 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #133337;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  /* position: absolute; */
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  float: right;
+  margin-right: 50px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+.show {display: block;}
+
 
 /* Margins */
 .mato10{
