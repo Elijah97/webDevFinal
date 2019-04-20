@@ -145,6 +145,10 @@ form.formBook{
   
   padding: 10px 14px;
 }  
+form.formAuth{
+  
+  padding: 10px 14px;
+}  
 
 .label{
   float: left;
@@ -152,24 +156,34 @@ form.formBook{
   font-weight: 600;
 }
 
-form.formBook input[type=text],input[type=email],input[type=date]{
-  border-radius: 0px;
+form.formBook input[type=text],input[type=email],input[type=date],input[type=number],input[type=password]{
+  border-radius: 4px;
   padding: 10px 14px;
   border: 1px solid #970000;
   float: left;
   width: 90%;
   height: 20px;
 }
+form.formAuth input[type=text],input[type=email],input[type=date],input[type=number],input[type=password]{
+  border-radius: 4px;
+  padding: 10px 14px;
+  border: 1px solid #970000;
+  float: left;
+  width: 95%;
+  height: 20px;
+}
+
 form.formBook input[type=text]:focus{
   outline: none;
   border: 2px solid #970000;
   padding: 10px 14px;
 }
 .select{
-  border-radius: 0px;
-  padding: 0px 9px;
+  border-radius: 4px;
+  padding: 10px 14px;
   border: 1px solid #970000;
-  width: 99%;
+  width: 98%;
+  float: left;
   height: 50px;
   color: #000000;
 }
@@ -187,9 +201,30 @@ form.formBook input[type=text]:focus{
   color: #000000;
 }
 
+
+/* Login and Register */
+.login-body{
+  border-radius: 4px; 
+  width: 28%;
+  text-align: center;
+  background: #fff;
+  min-height: 50vh;
+  margin-top: 100px;
+}
+.formAuth p{
+  font-size: 18px;
+}
+.formAuth p a{
+  text-decoration: none;
+  color: #970000;
+}
+
+
+
 .width100{
   width: 100% !important;
 }
+
 
 /* Color */
 .white{
