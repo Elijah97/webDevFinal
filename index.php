@@ -1,47 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HOTEL TRANSYLVANIA</title>
-    <link rel="stylesheet" href="css/ui.css">
-    <link rel="shortcut icon" href="img/logo.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <div class="white-bar">
-        <div class="nav-bar">
-            <ul>
-                <li><a href=""><img src="img/logo.png" alt="" width="50"></a></li>
-                <li class="pad8"><a href="index.html" class="active">Home</a></li>
-                <li class="pad8"><a href="about.html">About</a></li>
-                <li class="pad8"><a href="shop.html">Shop</a></li>
-                
-                <li class="pad8" style="float:right;margin-bottom: 5PX"> <a href="signup.html"  class="button white">Join Free</a></li>
-                <li class="pad8" style="float:right"><a href="login.html">Login</a></li>
+<?php include('assets/header.php'); ?>
 
-                <li class="pad8" style="float:right;margin-bottom: 5PX"> 
-                    <a href="cart.html" class="cart-big "><i class="fa fa-shopping-cart red" style="font-size: 30px;"></i>&nbsp;<sup>3</sup></a>
-                </li>
-                <!-- When user is logged in -->
-                <li class="pad8" style="float:right;margin-bottom: 5PX"> 
-                <div class="dropdown pushRight">
-                    <button onclick="myFunction()" class="dropbtn">Elie Gash <i class="fa fa-caret-down"></i></button>
-                  </div>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-    
     <div class="background">
         <div class="overlay">
-            
-        <div id="myDropdown" class="dropdown-content">
-        <a href="#profile">Profile</a>
-        <a href="#carts">My Cart</a>
+            <div id="myDropdown" class="dropdown-content">
+            <a href="#profile">Profile</a>
+            <a href="#carts">My Cart</a>
         </div>
             <div class="body white">
                 <div class="bodyLeft">
@@ -58,16 +21,8 @@
                 <div class="bodyRight">
                     <div class="bodyRightHeader">
                         <span>Book A Hotel</span>
-                        <!-- <h2 class="black">Leave a comment</h2> -->
                     </div>
-                    <form action="connect.php" method="POST" class="formBook">
-                        <!-- <select name="" id="" class="select" >
-                            <option value="" selected>Select option</option>
-                            <option value="">Mehdi</option>
-                            <option value="">Gaidi</option>
-                            <option value="">Donart</option>
-                            <option value="">Elie</option>
-                        </select> -->
+                    <form action="#" method="POST" class="formBook">
                         <label for="" class="label black">Check in</label>
                         <input type="date" placeholder="Date In" class="form-search" style="margin-top:16px;">
                         <label for="" class="label black">Check Out</label>
@@ -83,9 +38,6 @@
                         <input type="number" placeholder="Adults" class="form-search" style="margin-top:16px;" min="0">
 
                         <input type="number" placeholder="Children" class="form-search" style="margin-top:16px;" min="0">
-                        <!-- <input type="text" placeholder="Full Names" class="form-search" style="margin-top:16px;">
-                        <input type="email" placeholder="Email" class="form-search" style="margin-top:16px; margin-bottom: 16px ">
-                        <textarea name="" id=""  rows="6" class="textarea"></textarea> -->
                         <button type="submit" class="button width100 white" style="margin-top:10px"> Check Availabilty</button>
                     </form>
                     </p>
@@ -103,7 +55,7 @@
                 <div>
                     <h4>Household</h4>
                     <small class="black">Ex: Gas, Plates</small>
-                    <a href="more.html" class="a"><button class="button width100 mato16" >Find More</button></a> 
+                    <a href="more.php" class="a"><button class="button width100 mato16" >Find More</button></a> 
                 </div>
             </div>
 
@@ -112,7 +64,7 @@
                 <div>
                     <h4>Meat</h4>
                     <small class="black">Ex: Beef, Pork</small>
-                    <a href="more.html" class="a"><button class="button width100 mato16" >Find More</button></a> 
+                    <a href="more.php" class="a"><button class="button width100 mato16" >Find More</button></a> 
                 </div>
             </div>
             
@@ -121,7 +73,7 @@
                 <div>
                     <h4>Clothes</h4>
                     <small class="black">Ex: Kitenge</small>
-                    <a href="more.html" class="a"><button class="button width100 mato16" >Find More</button></a> 
+                    <a href="more.php" class="a"><button class="button width100 mato16" >Find More</button></a> 
                 </div>
             </div>
 
@@ -130,7 +82,7 @@
                 <div>
                     <h4>Beverages</h4>
                     <small class="black">Ex: Soda, Beers</small>
-                    <a href="more.html" class="a"><button class="button width100 mato16" >Find More</button></a> 
+                    <a href="more.php" class="a"><button class="button width100 mato16" >Find More</button></a> 
                 </div>
             </div>
 
@@ -140,7 +92,7 @@
                 <div>
                     <h4>Groceries</h4>
                     <small class="black">Ex: Mayonaise</small>
-                    <a href="more.html" class="a"><button class="button width100 mato16" >Find More</button></a> 
+                    <a href="more.php" class="a"><button class="button width100 mato16" >Find More</button></a> 
                 </div>
             </div>
             <div class="product">
@@ -148,7 +100,7 @@
                 <div>
                     <h4>Personal Care</h4>
                     <small class="black">Ex: Body Lotion, Beers</small>
-                    <a href="more.html" class="a"><button class="button width100 mato16" >Find More</button></a> 
+                    <a href="more.php" class="a"><button class="button width100 mato16" >Find More</button></a> 
                 </div>
             </div>
 
@@ -157,7 +109,7 @@
                 <div>
                     <h4>Snacks</h4>
                     <small class="black">Ex: Pringles, Biscuits</small>
-                    <a href="more.html" class="a"><button class="button width100 mato16" >Find More</button></a> 
+                    <a href="more.php" class="a"><button class="button width100 mato16" >Find More</button></a> 
                 </div>
             </div>
 
@@ -166,7 +118,7 @@
                 <div>
                     <h4>Baby</h4>
                     <small class="black">Ex: Pampers, Food</small>
-                    <a href="more.html" class="a"><button class="button width100 mato16" >Find More</button></a> 
+                    <a href="more.php" class="a"><button class="button width100 mato16" >Find More</button></a> 
                 </div>
             </div>
 
@@ -182,7 +134,7 @@
                 <div>
                     <h4>Beef Meat</h4>
                     <span class="black">Price: 5200 Rwf/Kg</span>
-                    <a href="more.html" class="pushRight cart"><i class="fa fa-cart-plus"></i></a> 
+                    <a href="more.php" class="pushRight cart"><i class="fa fa-cart-plus"></i></a> 
                     <input type="number" style="width:40px; height: 15px; margin-right: 10px" class="pushRight mato6"  min="0" placeholder="Qty">
                 </div>
             </div>
@@ -192,7 +144,7 @@
                 <div>
                     <h4>Pampers</h4>
                     <span class="black">Price: 20000 Rwf</span>
-                    <a href="more.html" class="pushRight cart"><i class="fa fa-cart-plus"></i></a>
+                    <a href="more.php" class="pushRight cart"><i class="fa fa-cart-plus"></i></a>
                     <input type="number" style="width:40px; height: 15px; margin-right: 10px" class="pushRight mato6"  min="0" placeholder="Qty"> 
                 </div>
             </div>
@@ -202,7 +154,7 @@
                 <div>
                     <h4>Pringles</h4>
                     <span class="black">Price: 2000 Rwf</span>
-                    <a href="more.html" class="pushRight cart"><i class="fa fa-cart-plus"></i></a> 
+                    <a href="more.php" class="pushRight cart"><i class="fa fa-cart-plus"></i></a> 
                     <input type="number" style="width:40px; height: 15px; margin-right: 10px" class="pushRight mato6"  min="0" placeholder="Qty">
                 </div>
             </div>
@@ -212,7 +164,7 @@
                 <div>
                     <h4>Body Lotion</h4>
                     <span class="black">Price: 2,000 Rwf</span>
-                    <a href="more.html" class="pushRight cart"><i class="fa fa-cart-plus"></i></a> 
+                    <a href="more.php" class="pushRight cart"><i class="fa fa-cart-plus"></i></a> 
                     <input type="number" style="width:40px; height: 15px; margin-right: 10px" class="pushRight mato6"  min="0" placeholder="Qty">
                 </div>
             </div>
@@ -221,44 +173,4 @@
         </div>
     </div>
 
-    <footer class="footer white">
-        <div class="container-2">
-            <div class="foot">
-                <img src="img/logo.png" alt="" width="150" class="mato10">
-                <p>
-                    &copy; 2019 HOTEL TRANSYLVANIA.
-                </p>
-            </div>
-            <div class="foot">
-                <ul class="foot-list">
-                    <li><h4>categories</h4></li>
-                    <li class="mato10"><a href="#">Beverages</a></li>
-                    <li class="mato10"><a href="#">Groceries</a></li>
-                    <li class="mato10"><a href="#">Meat</a></li>
-                </ul>
-            </div>
-            <div class="foot">
-                <ul class="foot-list">
-                    <li><h4>Useful Links</h4></li>
-                    <li class="mato10"><a href="#">Terms</a></li>
-                    <li class="mato10"><a href="#">Conditions</a></li>
-                    <li class="mato10"><a href="#">Account Details</a></li>
-                </ul>
-            </div>
-            <div class="foot">
-                <ul class="foot-list">
-                    <li><h4>Contact Us</h4></li>
-                    <li class="mato10"><a href="#">Call: +25070000000</a></li>
-                    <li class="mato10"><a href="#">Email: order@hoteltranslvania.com</a></li><br>
-                    <li class="mato10"><a href="#">KG 123</li>
-                    <li class="mato10"><a href="#">Booyah</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
-
-
-    <script src="js/main.js"></script>
-</body>
-</html>
+<?php include('assets/footer.php'); ?>
