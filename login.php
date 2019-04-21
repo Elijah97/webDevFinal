@@ -24,13 +24,13 @@
             <div class="bodyRightHeader">
                 <h3>Login to your account</3>
             </div>
-            <form action="#" method="POST" class="formAuth">
-                <label for="" class="label black">Username  or Email</label>
-                <input type="text" placeholder="Ex: example@domain.com" class="form-search" style="margin-top:16px;">
-                <label for="" class="label black">Password</label>
-                <input type="password" placeholder="********" class="form-search" style="margin-top:16px;">
+            <form action="assets/auth.php?login" method="POST" class="formAuth">
+                <label class="label black">Email</label>
+                <input type="email" name="email" placeholder="example@domain.com" class="form-search" style="margin-top:16px;" required/>
+                <label class="label black">Password</label>
+                <input type="password" name="password" placeholder="********" class="form-search" style="margin-top:16px;" required/>
                 <p class="width100" style="margin-top:240px">Don't have an account? <a href="signup.php">Sign up</a></p>
-                <button type="submit" class="button width100 white" style="margin-top:20px"> Login</button>
+                <button type="submit" class="button width100 white" style="margin-top:20px">Login</button>
             </form>
         </div>
     </center>
