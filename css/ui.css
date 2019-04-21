@@ -39,7 +39,7 @@ body{
   }
   
 .active {
-    color: #133337 !important;
+    color: #970000 !important;
   }
   
 div.background{
@@ -244,6 +244,9 @@ div.product div{
 .section-popular-2{
   margin-top: 15vh; 
 }
+/* .section-popular-3{
+  margin-top: 5vh; 
+} */
 .cart{
   font-size: 30px;
   text-decoration: none;
@@ -254,6 +257,26 @@ div.product div{
   text-decoration: none;
   color: #133337;
 }
+
+/* About page */
+.about-body{
+  padding: 160px 180px;
+}
+.about-pic img{
+  width: 30%;
+  height: 300px;
+  float: left;
+  margin-top: 20px;
+}
+.about{
+  width: 68%;
+  float: left;
+  padding-left: 25px;
+}
+.about-body p{
+  font-size: 18px;
+}
+
 
 /* Cart Page */
 .cart-body{
@@ -409,7 +432,7 @@ input:focus {
   color: #000000 !important;
 }
 .red{
-  color: #133337 !important;
+  color: #970000 !important;
 }
 .grey{
   color: #eee !important; 
