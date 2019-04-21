@@ -1,39 +1,39 @@
 body{
-    font-size: 16px;
-    font-family: 'Dosis', sans-serif;
-	color: #282828;
-	background: rgb(231, 231, 231);
+  font-size: 16px;
+  font-family: 'Dosis', sans-serif;
+  color: #282828;
+  background: rgb(231, 231, 231);
 }
 .white-bar{
-    display:block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #fff;
+  display:block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
 }
 .nav-bar{
-    padding: 5px 180px;
+  padding: 5px 180px;
 }
 .nav-bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
   
 .nav-bar li {   
-    float: left;
-  }
+  float: left;
+}
   
 .nav-bar li a {
-    display: block;
-    color: #282828;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px;
-  }
+  display: block;
+  color: #282828;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
 .nav-bar li a:hover:not(.active) {
     color: #133337;
   }

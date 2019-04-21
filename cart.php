@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HOTEL TRANSYLVANIA</title>
-    <link rel="stylesheet" href="css/ui.css">
-    <link rel="shortcut icon" href="img/logo.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <div class="white-bar">
-        <div class="nav-bar">
-            <ul>
-                <li><a href=""><img src="img/logo.png" alt="" width="50"></a></li>
-                <li class="pad8"><a href="index.html">Home</a></li>
-                <li class="pad8"><a href="about.html">About</a></li>
-                <li class="pad8"><a href="shop.html">Shop</a></li>
-                
-                <li class="pad8" style="float:right;margin-bottom: 5PX"> <a href="signup.html"  class="button white">Join Free</a></li>
-                <li class="pad8" style="float:right"><a href="login.html">Login</a></li>
-
-                <li class="pad8" style="float:right;margin-bottom: 5PX"> 
-                    <a href="cart.html" class="cart-big "><i class="fa fa-shopping-cart red" style="font-size: 30px;"></i>&nbsp;<sup>3</sup></a>
-                </li>
-                <!-- When user is logged in -->
-                <li class="pad8" style="float:right;margin-bottom: 5PX"> 
-                <div class="dropdown pushRight">
-                    <button onclick="myFunction()" class="dropbtn">Elie Gash <i class="fa fa-caret-down"></i></button>
-                  </div>
-                </li>
-
-            </ul>
-        </div>
-    </div>
+<?php include('assets/header.php'); ?>
 
     <div class="cart-body">
         <div class="shopping-cart">
@@ -120,10 +84,4 @@
 
     </div>
 
-    
-
-
-
-    <script src="js/main.js"></script>
-</body>
-</html>
+<?php include('assets/footer.php'); ?>
